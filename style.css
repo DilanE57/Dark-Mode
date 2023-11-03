@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+	--primario: #26292b;
+	--secundario: #2e3239;
+	--tercero: #5f7adb;
+	--cuarto: #a2b2ee;
+	--quinto: #2b2726;
+	--sexto: #403541;
+	--septiomo: #8e43ed;
+	--octavo: #f0ec8b;
+	--noveno: #1a1c22;
+	--decimo: #3d3a50;
+	--onceavo: #580ef6;
+	--decimo-segundo: #f7f7f7;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button{
+    border: none;
+    height: 50px;
+    width: 90px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: var(--decimo);
+}
+
+.circulo{
+    height: 36px;
+    width: 36px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.dark-mode-activo{
+    background-color: #1a1c22;
+}
+
+.dark-mode-activo button{
+    background-color: #fff;
+}
+
+
+.dark-mode-activo .circulo{
+    background-color: #1a1c22;
+    transform: translateX(100%);
+    transition: 0.8s;
+}
+
+.dark-mode-desactivo .circulo{
+    transition: 0.8s;
+}
+
+
